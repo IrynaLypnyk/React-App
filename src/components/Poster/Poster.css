@@ -1,0 +1,288 @@
+.poster{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.poster__sidebar{
+    background-color: #ff4d4d;
+    width: 350px;
+    padding: 30px 40px;
+    text-align: center;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.poster__logo{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.poster__logo img{
+    display: inline-block;
+    max-width: 100%;
+
+}
+
+.poster__promo{
+    margin-bottom: 40px;
+}
+.poster__promo div{
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+
+}
+.poster__features-list{
+    list-style: none;
+    text-align: left;
+}
+.poster__features-list li{
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.poster__features-list i{
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.poster__main{
+    width: 100%;
+    background-color: #e6f7ff;
+    padding: 60px 30px;
+}
+
+.poster__main-title{
+    color: #ff4d4d;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.poster__appointment-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.poster__appointment-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.poster__appointment-list li{
+    padding: 40px 10px;
+    width: 33%;
+    text-align: center;
+}
+
+.poster__appointment-list li p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.poster__appointment-list img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+.poster__contacts{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.poster__web {
+    text-align: center;
+    font-size: 18px;
+    width: 33%;
+}
+.poster__web a{
+    display: block;
+    color: #ff4d4d;
+    font-size: 30px;
+    font-weight: bold;
+}
+.poster__phones {
+    width: 67%;
+    display: flex;
+    padding-left: 40px;
+}
+.poster__phones-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.poster__phones-list li {
+    width: 50%;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.poster__phones-list li i{
+    margin-right: 10px;
+
+}
+.poster__phones-list li a{
+   text-decoration: none;
+    font-size: 18px;
+    color: #004466;
+}
+
+.poster__text{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+    .poster__sidebar{
+        width: 280px;
+        padding: 30px 30px;
+    }
+
+    .poster__promo div{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .poster__main-title{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .poster__appointment-title{
+        font-size: 30px;
+    }
+
+    .poster__appointment-list li p{
+        font-size: 20px;
+    }
+
+    .poster__contacts{
+       margin-bottom: 20px;
+
+    }
+    .poster__web {
+        font-size: 16px;
+    }
+    .poster__web a{
+        font-size: 25px;
+    }
+    .poster__phones {
+        padding-left: 20px;
+    }
+
+    .poster__phones-list li{
+        padding: 5px;
+    }
+    .poster__phones-list li a{
+        font-size: 16px;
+    }
+    .poster__text{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .poster__sidebar{
+        width: 260px;
+        padding: 20px;
+    }
+
+    .poster__promo div{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 10px;
+    }
+    .poster__main-title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .poster__appointment-title{
+        font-size: 20px;
+    }
+
+    .poster__appointment-list li p{
+        font-size: 16px;
+    }
+
+    .poster__contacts{
+        margin-bottom: 15px;
+
+    }
+    .poster__web {
+        font-size: 15px;
+    }
+    .poster__web a{
+        font-size: 18px;
+    }
+    .poster__phones {
+        padding-left: 10px;
+    }
+
+    .poster__phones-list li{
+        padding: 5px;
+    }
+    .poster__phones-list li a{
+        font-size: 15px;
+    }
+    .poster__text{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .poster__sidebar{
+        width: 50%;
+        min-width: 250px;
+    }
+
+    .poster__appointment-list{
+        flex-direction: column;
+    }
+    .poster__appointment-list li{
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    .poster__contacts{
+        flex-direction: column;
+    }
+    .poster__web {
+        width: 100%;
+    }
+    .poster__phones{
+        padding-left: 0;
+        width: 100%;
+    }
+    .poster__phones-list {
+        flex-direction: column;
+        padding: 5px 0;
+
+    }
+    .poster__phones-list li{
+        width: 100%;
+    }
+
+}
