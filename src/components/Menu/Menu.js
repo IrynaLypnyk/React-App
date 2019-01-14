@@ -73,6 +73,7 @@ class Menu extends Component{
                     <DropdownItem href="#" text="Пункт 2"></DropdownItem>
                     <DropdownItem href="#" text="Пункт 3"></DropdownItem>
                     <MenuLink href="#" text="Пункт 4"></MenuLink>
+                    <MenuLink href="#" text="Пункт 5"></MenuLink>
                 </ul>
             </nav>
         );

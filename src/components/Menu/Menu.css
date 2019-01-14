@@ -6,11 +6,10 @@
     display: flex;
     justify-content: space-around;
     height: 40px;
-
 }
 
 .menu__item{
-    width: 25%;
+    width: 20%;
 }
 .menu__item a{
     display: block;
@@ -18,8 +17,8 @@
     line-height: 40px;
     text-decoration: none;
     color: #004466;
-
-
+    text-align: center;
+    font-weight: bold;
 }
 
 .menu__item a:hover{
@@ -32,10 +31,34 @@
 .dropdown__list .menu__item{
     list-style: none;
     width: 100%;
+
 }
 
 
 .dropdown__list a{
     display: block;
     line-height: 30px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 900px) {
+    .menu__list {
+        width: 100%;
+
+    }
+
+    .menu__item a {
+        padding: 0;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .menu__list{
+        flex-direction: column;
+        height: auto;
+    }
+    .menu__item {
+        width: 100%;
+    }
 }

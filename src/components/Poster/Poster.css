@@ -203,6 +203,32 @@
         font-size: 18px;
     }
 }
+@media only screen and (max-width: 860px){
+    .poster__appointment-list{
+        flex-direction: column;
+    }
+    .poster__appointment-list li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .poster__contacts{
+        flex-direction: column;
+    }
+    .poster__phones{
+        padding-left: 0;
+        width: 100%;
+    }
+    .poster__phones-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+
+    }
+    .poster__phones-list li {
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 600px) {
     .poster__sidebar{
         width: 260px;
@@ -252,23 +278,17 @@
     }
 }
 @media only screen and (max-width: 500px) {
+    .poster{
+       flex-direction: column;
+    }
+
     .poster__sidebar{
-        width: 50%;
-        min-width: 250px;
-    }
-
-    .poster__appointment-list{
-        flex-direction: column;
-    }
-    .poster__appointment-list li{
         width: 100%;
-        padding: 10px;
+        min-width: 250px;
+        padding: 40px 20%;
     }
 
 
-    .poster__contacts{
-        flex-direction: column;
-    }
     .poster__web {
         width: 100%;
     }
@@ -276,11 +296,7 @@
         padding-left: 0;
         width: 100%;
     }
-    .poster__phones-list {
-        flex-direction: column;
-        padding: 5px 0;
 
-    }
     .poster__phones-list li{
         width: 100%;
     }
